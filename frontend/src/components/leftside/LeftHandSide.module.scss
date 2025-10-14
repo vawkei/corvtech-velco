@@ -1,0 +1,56 @@
+// .card{
+//     height: 100%;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-start;
+//     .nav{
+//         margin-top: 5rem;
+//         ul{
+            
+//             padding: 0;
+//             margin: 0;
+//             list-style: none;
+//         }
+//     }
+// }
+
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* aligns everything to the left */
+  padding: 1rem; /* optional: some breathing space */
+
+  .nav {
+    margin-top: 1.5rem;
+    width: 100%; /* ensure full width for consistent alignment */
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column; /* stack vertically */
+      gap: 1rem; /* space between items */
+      width: 100%;
+    }
+
+    li {
+      display: flex;
+      align-items: center; /* align icon + text in one row */
+      gap: 0.5rem; /* spacing between icon and text */
+      text-transform: capitalize;
+      font-size: 10px;
+      cursor: pointer;
+      padding-left: 0.5rem; /* small, uniform indent */
+      width: 100%; /* so the clickable area spans full width */
+    }
+
+    li:hover {
+      color: green; /* hover effect */
+      font-weight: 500;
+    }
+
+    
+  }
+}

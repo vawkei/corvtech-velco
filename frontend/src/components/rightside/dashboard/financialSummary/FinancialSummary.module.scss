@@ -1,0 +1,63 @@
+.container {
+    width: 100%;
+  h2 {
+    font-size: 14px;
+  }
+  .cards {
+    display: flex;
+    // align-items: center;
+    gap: 5rem;
+    padding: 1.5rem;
+
+    .card-container {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      padding: 0.5rem;
+
+      .mid-section{
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        justify-content: space-between;
+      }
+      .lower-section{
+        display: flex;
+        align-items: center;
+        p{
+            font-size: 10px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+// its not about the container being in flex. 
+// .card is this:
+// <div className={classes.cards}>
+//         {FinancialSummaryData.map((data) => (
+//           <Card className={classes["card-container"]}>
+//             <h2>{data.heading}</h2>
+//             <div className={classes["mid-section"]}>
+//               <p>{data.sum}</p>
+//               <p>{data.icon}</p>
+//             </div>
+//             <p>{data.yesterday}</p>
+//           </Card>
+//         ))}
+//       </div>
+// this  <h2>Welcome Back,Admin</h2> is not inside the .card. so why is this scss affecting it:
+//  .cards {
+//     display: flex;
+//     // align-items: center;
+//     gap: 1rem;
+//     padding: 1rem;
+// if i comment that code: .cards {
+//     display: flex;
+//     // align-items: center;
+//     gap: 1rem;
+//     padding: 1rem;
+// it stays put at the start and doesnt move to the center horizontally
