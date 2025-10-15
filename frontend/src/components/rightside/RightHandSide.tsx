@@ -1,6 +1,7 @@
 import classes from "./RightHandSide.module.scss";
-import TopRight from "../topRight/TopRight";
+import TopRight from "./topRight/TopRight";
 import FinancialSummary from "./dashboard/financialSummary/FinancialSummary";
+import AnalyticsFilter from "./dashboard/analyticsSummary/AnalyticsFilter";
 
 const RightHandSide = () => {
   return (
@@ -10,7 +11,12 @@ const RightHandSide = () => {
         <TopRight />
       </div>
       <div className={classes["dashboard-section"]}>
-        <FinancialSummary />
+        <div>
+          <FinancialSummary />
+        </div>
+        <div>
+          <AnalyticsFilter />
+        </div>
       </div>
     </div>
   );

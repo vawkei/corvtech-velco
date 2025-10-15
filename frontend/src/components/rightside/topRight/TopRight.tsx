@@ -1,9 +1,9 @@
 import classes from "./TopRight.module.scss";
 import { useState } from "react";
-import Card from "../ui/card/Card";
-import Search from "../ui/search/Search";
+import Card from "../../ui/card/Card";
+import Search from "../../ui/search/Search";
 import { FaRegBell } from "react-icons/fa";
-import avatarImage from "../../assets/default_avatar.png";
+import avatarImage from "../../../assets/default_avatar.png"
 
 const TopRight = () => {
   const [enteredSearch, setEnteredSearch] = useState("");
