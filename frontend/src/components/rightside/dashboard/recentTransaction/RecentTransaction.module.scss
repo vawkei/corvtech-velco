@@ -2,20 +2,34 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+
+  padding: 1rem 0.5rem;
+  //   margin: 1rem 0rem;
+
+  h2 {
+    text-align: start;
+  }
 
   table {
     padding: 1rem;
     border-collapse: collapse;
+    margin-top: 2rem;
 
-    th {
-      text-align: left;
+    thead {
+      background-color: rgb(249, 246, 246);
+
+      th {
+        text-align: left;
+        color: rgb(123, 122, 122);
+        font-size: 12px;
+      }
     }
 
     td {
       text-align: left;
       border-bottom: 1px rgb(250, 248, 248) solid;
       padding: 1rem 0;
+      font-size: 14px;
       // border-right: 1px black solid;
       // margin: 1rem 0rem;
       // margin-bottom: 1rem;
@@ -48,31 +62,29 @@
       display: flex;
       align-items: center;
       gap: 1rem;
-    }
-  }
-  .action {
-    position: relative;
-    .arr-left {
-      position: absolute;
-      right: 13rem;
-      font-size: 24px;
-    }
-    .arr-right{
-      position: absolute;
-      right: -0.2rem;
-      font-size: 24px;
-      color: white;
-    }
+      position: relative;
+      .arr-left {
+        position: absolute;
+        right: 13rem;
+        font-size: 24px;
+      }
+      .arr-right {
+        position: absolute;
+        right: -0.2rem;
+        font-size: 24px;
+        color: white;
+      }
 
-    .btn-one {
-      background-color: rgb(234, 228, 228);
-      color: rgb(50, 43, 43);
-      padding: 0.25rem 2rem;
-    }
-    .btn-two {
-      background-color: green;
-      color: white;
-      padding: 0.25rem 2rem;
+      .btn-one {
+        background-color: rgb(234, 228, 228);
+        color: rgb(50, 43, 43);
+        padding: 0.25rem 2rem;
+      }
+      .btn-two {
+        background-color: green;
+        color: white;
+        padding: 0.5rem 2rem;
+      }
     }
   }
 }

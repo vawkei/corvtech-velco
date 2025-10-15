@@ -6,6 +6,7 @@ import { MdKeyboardArrowLeft } from 'react-icons/md';
 import { MdKeyboardArrowRight } from 'react-icons/md';
 
 const RecentTransaction = () => {
+    var nairaSymbol = "\u20A6";
   return (
     <Card className={classes.container}>
       <h2>Recent Transactions</h2>
@@ -27,7 +28,7 @@ const RecentTransaction = () => {
                 <td >{data.transactionID}</td>
                 <td>{data.date}</td>
                 <td>{data.vehicleCat}</td>
-                <td>{data.amount}</td>
+                <td>{nairaSymbol}{data.amount}</td>
                 <td>{data.payMethod}</td>
                 <td className={classes.stats} >
                   <p

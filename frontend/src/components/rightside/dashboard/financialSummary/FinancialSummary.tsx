@@ -9,7 +9,7 @@ const FinancialSummary = () => {
 
   return (
     <div className={classes.container}>
-      <h2>Welcome Back,Admin</h2>
+      <h2>Welcome Back, Admin</h2>
 
       <div className={classes.cards}>
         {FinancialSummaryData.map((data) => {
@@ -20,12 +20,13 @@ const FinancialSummary = () => {
               <h2>{data.heading}</h2>
 
               <div className={classes["mid-section"]}>
-                <p>
+                
+                <p className={classes.sum}>
                   {nairaSymbol} {data.sum}{" "}
                 </p>
 
-                <p>
-                  <Icon />
+                <p className={classes.icon}>
+                  <Icon color={data.color} size={20} />
                 </p>
               </div>
               <div className={classes["lower-section"]}>

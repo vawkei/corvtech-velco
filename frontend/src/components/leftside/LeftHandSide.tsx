@@ -7,8 +7,8 @@ import { SiSimpleanalytics } from "react-icons/si";
 const LeftHandSide = () => {
   return (
     <Card className={classes.card}>
-      <h3>Velco</h3>
-      <div className={classes.nav}>
+      <h3>V E L C O</h3>
+      <nav className={classes.nav}>
         <ul>
           <li>
             <RiDashboardFill size={12} /> dashboard
@@ -20,7 +20,7 @@ const LeftHandSide = () => {
             <SiSimpleanalytics size={12} /> Reports & Analytics
           </li>
         </ul>
-      </div>
+      </nav>
     </Card>
   );
 };

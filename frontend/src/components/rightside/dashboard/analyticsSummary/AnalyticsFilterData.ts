@@ -18,7 +18,7 @@ import { PiCaretDownLight } from 'react-icons/pi';
     },
     {
       iconOne:BsTruck,
-      text: "All LGAs",
+      text: "All Categories",
       iconTwo:PiCaretDownLight  
     },
   ];

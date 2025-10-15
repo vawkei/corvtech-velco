@@ -46,8 +46,8 @@ const RemittanceCompliance = () => {
   return (
     <Card className={classes.container}>
       <div className={classes.heading}>
-        <h2>Vehicle Category Performance</h2>
-        <p>Top Paying Vehicle Categories</p>
+        <h2>Remittence Compliance</h2>
+        <p>Breakdown by status</p>
       </div>
       <div className={classes.chart}>
         <Doughnut data={data} options={options} />
