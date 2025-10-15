@@ -11,7 +11,6 @@ import {
 import Card from "../../../../ui/card/Card";
 
 
-// import Card from "../../../../ui/card/Card";
 
 ChartJs.register(BarElement, CategoryScale, LinearScale, plugins);
 
@@ -25,7 +24,7 @@ const RevenueTrend = () => {
         backgroundColor: "#22c55e",
       },
       {
-        labels: "Remitted",
+        label: "Remitted",
         data: [50, 65, 58, 78, 72, 88],
         backgroundColor: "#6b7280",
       },

@@ -3,6 +3,8 @@ import TopRight from "./topRight/TopRight";
 import FinancialSummary from "./dashboard/financialSummary/FinancialSummary";
 import AnalyticsFilter from "./dashboard/analyticsSummary/AnalyticsFilter";
 import RevenueTrend from "./dashboard/charts/revenueTrend/RevenueTrend";
+import VehicleCategoryPerformance from "./dashboard/charts/vehicleCategory/VehicleCategory";
+import RemittanceCompliance from "./dashboard/charts/remittance/RemittanceChart";
 
 const RightHandSide = () => {
   return (
@@ -22,6 +24,15 @@ const RightHandSide = () => {
 
         <div className={classes["revenue-trend-parent"]}>
           <RevenueTrend />
+        </div>
+
+        <div className={classes["vehicle-and-remittance"]}>
+          <div className={classes.vehicle}>
+            <VehicleCategoryPerformance />
+          </div>
+          <div className={classes.remittance}>
+            <RemittanceCompliance />
+          </div>
         </div>
       </div>
     </div>
