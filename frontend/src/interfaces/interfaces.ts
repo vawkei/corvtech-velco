@@ -1,4 +1,4 @@
-import type { ChangeEvent } from "react";
+import type { ChangeEvent, ReactNode } from "react";
 
 export interface LayoutProp {
   children: React.ReactNode;
@@ -17,10 +17,9 @@ export interface SearchProps{
   onChange:(event:ChangeEvent<HTMLInputElement>)=>void
 }
 
-export interface SearchProps{
-    
-    // type?:string
-    // placeholder?:string
-    // value:string,
-    // onChange:(e:React.ChangeEvent<HTMLInputElement>)=>void
+export interface Button{
+  children: ReactNode;
+  className:string;
+  onClick?:()=>void;
+  type?: "button"|"submit"
 }

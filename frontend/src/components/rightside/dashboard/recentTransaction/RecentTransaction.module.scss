@@ -1,0 +1,78 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+
+  table {
+    padding: 1rem;
+    border-collapse: collapse;
+
+    th {
+      text-align: left;
+    }
+
+    td {
+      text-align: left;
+      border-bottom: 1px rgb(250, 248, 248) solid;
+      padding: 1rem 0;
+      // border-right: 1px black solid;
+      // margin: 1rem 0rem;
+      // margin-bottom: 1rem;
+    }
+    .stats {
+      text-align: center;
+
+      .completed {
+        color: #0ed915;
+        background-color: #e1ede2;
+        border-radius: 0.5rem;
+      }
+      .overdue {
+        color: rgb(241, 94, 94);
+        background-color: rgb(242, 159, 159);
+        border-radius: 0.5rem;
+      }
+      .pending {
+        color: #ff9800;
+        background-color: #f6d4a2;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+  .lower-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .action {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+  .action {
+    position: relative;
+    .arr-left {
+      position: absolute;
+      right: 13rem;
+      font-size: 24px;
+    }
+    .arr-right{
+      position: absolute;
+      right: -0.2rem;
+      font-size: 24px;
+      color: white;
+    }
+
+    .btn-one {
+      background-color: rgb(234, 228, 228);
+      color: rgb(50, 43, 43);
+      padding: 0.25rem 2rem;
+    }
+    .btn-two {
+      background-color: green;
+      color: white;
+      padding: 0.25rem 2rem;
+    }
+  }
+}

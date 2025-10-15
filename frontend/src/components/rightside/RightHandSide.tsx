@@ -5,6 +5,7 @@ import AnalyticsFilter from "./dashboard/analyticsSummary/AnalyticsFilter";
 import RevenueTrend from "./dashboard/charts/revenueTrend/RevenueTrend";
 import VehicleCategoryPerformance from "./dashboard/charts/vehicleCategory/VehicleCategory";
 import RemittanceCompliance from "./dashboard/charts/remittance/RemittanceChart";
+import RecentTransaction from "./dashboard/recentTransaction/RecentTransaction";
 
 const RightHandSide = () => {
   return (
@@ -33,6 +34,9 @@ const RightHandSide = () => {
           <div className={classes.remittance}>
             <RemittanceCompliance />
           </div>
+        </div>
+        <div className={classes["recent-transactions"]}>
+          <RecentTransaction />
         </div>
       </div>
     </div>
