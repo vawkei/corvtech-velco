@@ -10,12 +10,12 @@ const AnalyticsFilter = () => {
       
       <div className={classes["card-container"]}>
        
-        {AnalyticsFilterData.map((data) => {
+        {AnalyticsFilterData.map((data,index) => {
           const IconOne = data.iconOne;
           const IconTwo = data.iconTwo;
        
           return (
-            <div className={classes.item}>
+            <div className={classes.item} key={index}>
               <p>
                 <IconOne />
               </p>
