@@ -21,6 +21,10 @@
   align-items: flex-start; /* aligns everything to the left */
   padding: 1rem; /* optional: some breathing space */
 
+  a{
+    text-decoration: none;
+  }
+
   .nav {
     margin-top: 1.5rem;
     width: 100%; /* ensure full width for consistent alignment */
@@ -52,5 +56,8 @@
     }
 
     
+  }
+  .active{
+    color: red;
   }
 }

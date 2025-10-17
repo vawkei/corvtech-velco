@@ -1,9 +1,9 @@
 .container {
     width: 100%;
   h2 {
-    font-size: 18px;
-    font-weight: bold;
-    text-align: start;
+    font-size: 16px;
+    // font-weight: bold;
+    // text-align: start;
   }
   .cards {
     display: flex;
@@ -16,7 +16,7 @@
       align-items: flex-start;
       flex-direction: column;
       // padding: 0.5rem;
-      padding: 1rem;
+      padding: 0.5rem;
 
       h2{
         color: rgb(123, 122, 122);

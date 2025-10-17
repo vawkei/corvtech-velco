@@ -1,19 +1,16 @@
-import classes from "./RightHandSide.module.scss";
-import TopRight from "./topRight/TopRight";
-import FinancialSummary from "./dashboard/financialSummary/FinancialSummary";
-import AnalyticsFilter from "./dashboard/analyticsSummary/AnalyticsFilter";
-import RevenueTrend from "./dashboard/charts/revenueTrend/RevenueTrend";
-import VehicleCategoryPerformance from "./dashboard/charts/vehicleCategory/VehicleCategory";
-import RemittanceCompliance from "./dashboard/charts/remittance/RemittanceChart";
-import RecentTransaction from "./dashboard/recentTransaction/RecentTransaction";
+import classes from "./Dashboard.module.scss";
+import FinancialSummary from "./financialSummary/FinancialSummary";
+import AnalyticsFilter from "./analyticsSummary/AnalyticsFilter";
+import RevenueTrend from "./charts/revenueTrend/RevenueTrend";
+import VehicleCategoryPerformance from "./charts/vehicleCategory/VehicleCategory";
+import RemittanceCompliance from "./charts/remittance/RemittanceChart";
+import RecentTransaction from "./recentTransaction/RecentTransaction";
 
-const RightHandSide = () => {
+const Dashboard = () => {
   return (
     <div className={classes.container}>
       {/* <h2>RightHandSide</h2> */}
-      <div>
-        <TopRight />
-      </div>
+      
       <div className={classes["dashboard-section"]}>
         <div>
           <FinancialSummary />
@@ -43,4 +40,4 @@ const RightHandSide = () => {
   );
 };
 
-export default RightHandSide;
+export default Dashboard;

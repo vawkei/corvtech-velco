@@ -22,6 +22,15 @@
         text-align: left;
         color: rgb(123, 122, 122);
         font-size: 12px;
+
+        &.icon-cell {
+          width: 60px; // tweak value until visually centered
+          text-align: center;
+          vertical-align: middle;
+          padding: 0; // removes extra spacing that may push icon
+          white-space: nowrap;
+          // background-color: red;
+        }
       }
     }
 
