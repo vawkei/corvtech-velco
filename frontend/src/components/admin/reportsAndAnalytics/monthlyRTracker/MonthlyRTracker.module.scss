@@ -101,6 +101,7 @@
           }
         }
 
+
         td {
           text-align: left;
           border-bottom: 1px rgb(250, 248, 248) solid;
@@ -114,6 +115,29 @@
           &.data-action {
             p {
               text-align: center;
+            }
+          }
+
+          &.stats {
+            text-align: center;
+
+            .onTime {
+              color: white;
+              background-color: green;
+              border-radius: 0.5rem;
+              padding:0.1rem 0.25rem;
+            }
+            .overdue {
+              color: white;
+              background-color: red;
+              border-radius: 0.5rem;
+              padding:0.1rem 0.25rem;
+            }
+            .pending {
+              color: white;
+              background-color: orange;
+              border-radius: 0.5rem;
+              padding:0.1rem 0.25rem;
             }
           }
         }

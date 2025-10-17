@@ -74,12 +74,27 @@ const MonthlyRemittanceTracker = () => {
                     <td></td>
                     <td>{data.dueDate}</td>
                     <td></td>
-                    <td>{data.status}</td>
+                    <td className={classes.stats}>
+                      <p
+                        className={
+                          data.status === "On Time"
+                            ? classes.onTime
+                            : data.status === "Overdue"
+                            ? classes.overdue
+                            : data.status === "Pending"
+                            ? classes.pending
+                            : ""
+                        }
+                      >
+                        {data.status}
+                      </p>
+                    </td>
+
                     <td></td>
                     <td className={classes["data-action"]}>
                       <p>{data.action}</p>
                     </td>
-                    <td></td>
+                    {/* <td></td> */}
                   </tr>
                 );
               })}

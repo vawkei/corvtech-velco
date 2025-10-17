@@ -68,7 +68,7 @@ export const MonthlyRemittanceData = [
     expectedAmount: "65,000",
     actualAmountPaid: "65,000",
     dueDate: "23-01-2024",
-    status: "Over",
+    status: "Overdue",
     action: ":",
   },
   {

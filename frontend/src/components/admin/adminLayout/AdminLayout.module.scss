@@ -1,14 +1,15 @@
 .container {
   width: 100%;
   min-width: 60rem;
-  height: 100vh;
+  // height: 100vh;
+  height: 115vmax;
   display: flex;
   align-items: flex-start;
 
   .left-hand-container {
     width: 15%;
     // border-right: 1px red solid;
-    height: 80%;
+    height: 100%;
   }
   .right-hand-container {
     width: 85%;
