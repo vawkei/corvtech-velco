@@ -1,0 +1,51 @@
+.container {
+    width: 100%;
+    
+  .cards {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 5rem;
+    padding: 1.5rem 0rem;
+
+    .card {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      // padding: 0.5rem;
+      padding: 0.75rem;
+
+      h2{
+        color: rgb(123, 122, 122);
+        font-size: 12px;
+      }
+
+      .mid-section{
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        justify-content: space-between;
+
+        .icon{
+          padding: 0.2rem;
+          background-color: rgb(224, 242, 224);
+          border-radius: 6px;
+        }
+
+        .sum{
+          font-weight: bold;
+          font-size: 18px;
+          padding: 0.25rem;
+        }
+        
+      }
+      .lower-section{
+        display: flex;
+        align-items: center;
+        p{
+            font-size: 10px;
+        }
+      }
+    }
+  }
+}

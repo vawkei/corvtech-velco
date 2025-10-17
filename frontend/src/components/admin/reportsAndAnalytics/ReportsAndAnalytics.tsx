@@ -1,8 +1,13 @@
 import Card from "../../ui/card/Card";
 import classes from "./ReportsAndAnalytics.module.scss";
 import RevenuePerformanceChart from "./revPerformanceChart/RevenuePerformanceChart";
+import ReportAndAnalyticsSummary from "./reportsSummary/ReportsAndAnalyticsSummary";
+import MonthlyRemittanceTracker from "./monthlyRTracker/MonthlyRemittanceTracker";
+// import { HiOutlineCalculator } from 'react-icons/hi2';
 
 const ReportsAndAnalytics = () => {
+
+
   return (
     <div className={classes.container}>
       <div className={classes.heading}>
@@ -16,8 +21,12 @@ const ReportsAndAnalytics = () => {
           required
         </p>
       </Card>
+      <ReportAndAnalyticsSummary />
       <div className={classes["rev-chart-container"]}>
         <RevenuePerformanceChart />
+      </div>
+      <div>
+        <MonthlyRemittanceTracker />
       </div>
     </div>
   );

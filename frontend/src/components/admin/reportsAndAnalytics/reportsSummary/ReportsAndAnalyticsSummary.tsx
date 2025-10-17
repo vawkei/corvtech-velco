@@ -1,26 +1,21 @@
-// https://github.com/vawkei/corvtech-velco.git
-
+import classes from "./ReportSummary.module.scss";
 import Card from "../../../ui/card/Card";
-import classes from "./FinancialSummary.module.scss";
-import { FinancialSummaryData } from "./FinancialSummaryData";
+import { ReportAndAnalyticsData } from "./ReportsData";
 
-const FinancialSummary = () => {
+const ReportAndAnalyticsSummary = () => {
   var nairaSymbol = "\u20A6";
 
   return (
     <div className={classes.container}>
-      <h2>Welcome Back, Admin</h2>
-
       <div className={classes.cards}>
-        {FinancialSummaryData.map((data) => {
+        {ReportAndAnalyticsData.map((data) => {
           const Icon = data.icon;
-          const YesterdayIcon = data?.yesterday?.icon;
+          const LastMonthIcon = data.lastmonth.icon;
           return (
             <Card className={classes["card"]} key={data.heading}>
               <h2>{data.heading}</h2>
 
               <div className={classes["mid-section"]}>
-                
                 <p className={classes.sum}>
                   {nairaSymbol} {data.sum}{" "}
                 </p>
@@ -30,7 +25,9 @@ const FinancialSummary = () => {
                 </p>
               </div>
               <div className={classes["lower-section"]}>
-                <p><YesterdayIcon /> {data.yesterday.text}</p>
+                <p>
+                  <LastMonthIcon /> {data.lastmonth.text}
+                </p>
               </div>
             </Card>
           );
@@ -40,4 +37,4 @@ const FinancialSummary = () => {
   );
 };
 
-export default FinancialSummary;
+export default ReportAndAnalyticsSummary;

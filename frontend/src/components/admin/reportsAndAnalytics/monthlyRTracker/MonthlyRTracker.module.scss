@@ -1,0 +1,123 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+
+  p {
+    color: rgb(123, 122, 122);
+    font-size: 12px;
+    margin-top: 0.5rem;
+  }
+
+  .card-container {
+    padding: 1rem;
+    margin-top: 1rem;
+    .heading {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .title {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .actions {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        position: relative;
+
+        .mark {
+          position: absolute;
+          left: 0.3rem;
+          color: white;
+        }
+        .btn-month {
+          background-color: white;
+          color: grey;
+          border: 1px solid #ccc;
+          padding: 0.25rem 1.5rem;
+        }
+        .modify {
+          position: absolute;
+          left: 7rem;
+          color: black;
+        }
+        .btn-LGA {
+          background-color: white;
+          color: grey;
+          border: 1px solid #ccc;
+          padding: 0.25rem 1.5rem;
+        }
+        .export {
+          position: absolute;
+          right: 4.5rem;
+          color: black;
+        }
+        .btn-export {
+          background-color: white;
+          color: grey;
+          border: 1px solid #ccc;
+          padding: 0.25rem 1.5rem;
+        }
+      }
+    }
+
+    .table-container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      padding: 1rem 0.5rem;
+      //   margin: 1rem 0rem;
+
+      h2 {
+        text-align: start;
+      }
+
+      table {
+        padding: 1rem;
+        border-collapse: collapse;
+        margin-top: 2rem;
+
+        thead {
+          background-color: rgb(249, 246, 246);
+
+          th {
+            text-align: left;
+            color: rgb(123, 122, 122);
+            font-size: 12px;
+
+            &.icon-cell {
+              width: 70px; // tweak value until visually centered
+              text-align: center;
+              vertical-align: middle;
+              padding: 0; // removes extra spacing that may push icon
+              white-space: nowrap;
+              // background-color: red;
+            }
+          }
+        }
+
+        td {
+          text-align: left;
+          border-bottom: 1px rgb(250, 248, 248) solid;
+          padding: 1rem 0;
+          font-size: 14px;
+
+          &.amount {
+            font-weight: bold;
+          }
+
+          &.data-action {
+            p {
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
