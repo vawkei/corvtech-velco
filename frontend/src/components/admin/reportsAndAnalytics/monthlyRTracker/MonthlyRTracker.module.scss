@@ -121,6 +121,19 @@
           &.stats {
             text-align: center;
 
+            
+            p {
+              margin: 0; /* remove browser default margins */
+              display: inline-flex; /* perfect vertical centering inside pill */
+              align-items: center;
+              justify-content: center;
+              // line-height: 1;
+              padding: 0.15rem 0.5rem;
+              // border-radius: 0.5rem;
+              // white-space: nowrap;
+              // font-size: 0.9rem;
+            }
+
             .onTime {
               color: white;
               background-color: green;

@@ -110,20 +110,19 @@
           // margin-bottom: 1rem;
 
           &.exemption-status {
-            // background-color: red;
+        
+
             p {
-              background-color: navy;
-              // border-radius: 50%;
-              // text-align: center;
-               color: white;
-              width: 30px; /* desired avatar size */
-              height: 20px; /* desired avatar size */
-              min-width: 40px; /* prevents shrinking in flex layout */
-              border-radius: 30%; /* circle avatar */
-              overflow: hidden; /* keep image inside the wrapper */
-              display: inline-flex;
+              margin: 0; /* remove browser default margins */
+              display: inline-flex; /* perfect vertical centering inside pill */
               align-items: center;
               justify-content: center;
+              // line-height: 1;
+              padding: 0.15rem 0.5rem;
+              background-color: navy;
+               border-radius: 40%;
+              text-align: center;
+              color: white;
             }
           }
         }
