@@ -2,6 +2,11 @@
   display: flex;
   flex-direction: column;
   margin-top: 1rem;
+  
+  h2 {
+    text-align: start;
+    color: #636363;
+  }
 
   p {
     color: rgb(123, 122, 122);
@@ -21,6 +26,10 @@
         display: flex;
         align-items: center;
         gap: 0.5rem;
+
+        h4{
+          color: #636363;
+        }
       }
 
       .actions {
@@ -82,7 +91,8 @@
         margin-top: 2rem;
 
         thead {
-          background-color: rgb(249, 246, 246);
+           background-color: #f9fafb;
+          // background-color: rgb(249, 246, 246);
 
           th {
             text-align: left;
@@ -105,6 +115,7 @@
           border-bottom: 1px rgb(250, 248, 248) solid;
           padding: 1rem 0;
           font-size: 14px;
+          color: #5a5a5a;
           // border-right: 1px black solid;
           // margin: 1rem 0rem;
           // margin-bottom: 1rem;

@@ -1,8 +1,15 @@
 .container {
   margin-top: 1rem;
   .heading {
+    h2 {
+      // font-size: 16px;
+      color: #636363;
+      font-weight: bold;
+      // text-align: start;
+    }
     p {
-      color: rgb(123, 122, 122);
+      color: #b0b0b0;
+      // color: rgb(123, 122, 122);
       font-size: 12px;
     }
   }

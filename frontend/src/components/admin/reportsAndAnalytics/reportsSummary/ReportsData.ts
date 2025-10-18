@@ -3,6 +3,7 @@ import { TbCurrencyNaira } from 'react-icons/tb';
 import { BiCalculator } from "react-icons/bi";
 import { LuLeaf } from 'react-icons/lu';
 // import { HiOutlineCalculator } from 'react-icons/hi2';
+import { WiMoonAltFull } from 'react-icons/wi';
 
 
 export const ReportAndAnalyticsData = [
@@ -19,7 +20,7 @@ export const ReportAndAnalyticsData = [
             sum: "4.6B/4.8B",
             icon:BiCalculator,
             color:"#16a34a",
-            lastmonth: { icon: FaArrowTrendUp, text: '98.5%', status:"fulfilled" },
+            lastmonth: { icon: WiMoonAltFull, text: '98.5%', status:"fulfilled" },
         },
         {
             heading: "Total Remittance Sent",

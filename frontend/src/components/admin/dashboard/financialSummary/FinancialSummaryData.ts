@@ -3,7 +3,7 @@ import { TbCurrencyNaira } from 'react-icons/tb';
 import { FaArrowTrendUp } from 'react-icons/fa6';
 import { AiOutlineWarning } from 'react-icons/ai';
 import { TbClockDollar } from 'react-icons/tb';
-// import { WiMoonAltFull } from 'react-icons/wi';
+
 
 export const FinancialSummaryData = [
     {

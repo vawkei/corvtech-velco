@@ -1,12 +1,53 @@
+// .container {
+//   width: 100%;
+//   padding: 1rem 0.5rem;
+// //   margin: 1rem 0rem;
+//   .heading {
+//     text-align: start;
+//     p {
+//       color: rgb(123, 122, 122);
+//       font-size: 12px;
+//     }
+//   }
+// }
+
 .container {
   width: 100%;
-  padding: 1rem 0.5rem;
-//   margin: 1rem 0rem;
+  height: 500px; // 👈 This is critical
+  background: "#fff";
+  // padding: 20px;
+  padding: 3rem;
+  border-radius: 16px;
+  box-shadow: "0 2px 6px rgba(0,0,0,0.05)";
+
   .heading {
-    text-align: start;
-    p {
-      color: rgb(123, 122, 122);
-      font-size: 12px;
+    h2 {
+      color: #636363;
+    }
+  }
+
+  .lower-div-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem 0rem;
+    margin-top: -2rem;
+
+    .second-div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      
+      .paid-amount {
+        font-size: 13;
+        color: "#444";
+      }
+    
+      .expected-amount {
+        font-size: 13;
+        color: "#444";
+      }
     }
   }
 }

@@ -1,4 +1,5 @@
 // 📒📒 Used recharts as i cant replicate the design with chartjs
+import Card from "../../../ui/card/Card";
 import classes from "./RevPerformanceChart.module.scss";
 import {
   BarChart,
@@ -24,7 +25,6 @@ const data = [
   { name: "18-seater Bus", expected: 90, paid: 65 },
 ];
 
-
 const CustomBar = (props: any) => {
   const { x, y, width, height, payload } = props;
   const { expected, paid } = payload;
@@ -33,9 +33,9 @@ const CustomBar = (props: any) => {
 
   // ✅ Move these OUTSIDE the return statement
   const r = Math.min(8, (width * 0.7) / 2, fillHeight / 2);
-  const gx = x 
+  const gx = x;
   const gy = y + (height - fillHeight);
-  const gw = width 
+  const gw = width;
   const gb = y + height;
 
   const path = `
@@ -70,16 +70,7 @@ const CustomBar = (props: any) => {
 
 const RevenuePerformanceChart = () => {
   return (
-    <div
-      style={{
-        width: "100%",
-        height: "500px", // 👈 This is critical
-        background: "#fff",
-        padding: "20px",
-        borderRadius: "16px",
-        boxShadow: "0 2px 6px rgba(0,0,0,0.05)",
-      }}
-    >
+    <Card className={classes.container}>
       <div className={classes.heading}>
         <h2>Revenue Performance</h2>
       </div>
@@ -137,47 +128,35 @@ const RevenuePerformanceChart = () => {
         </BarChart>
       </ResponsiveContainer>
 
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          marginTop: "-10px",
-          padding: "0 20px",
-        }}
-      >
-        <span style={{ fontSize: 13, color: "#555", fontWeight: 600 }}>
-          Vehicle Category
-        </span>
+      <div className={classes["lower-div-container"]}>
+        <div className={classes["first-div"]}>
+          <p>Vehicle Category</p>
+        </div>
+        <div className={classes["second-div"]}>
+          <div
+            style={{
+              width: 12,
+              height: 12,
+              backgroundColor: "#188038",
+              borderRadius: 2,
+            }}
+          ></div>
 
-        <div style={{ display: "flex", alignItems: "center", gap: "25px" }}>
-          <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
-            <div
-              style={{
-                width: 12,
-                height: 12,
-                backgroundColor: "#188038",
-                borderRadius: 2,
-              }}
-            ></div>
-            <span style={{ fontSize: 13, color: "#444" }}>Paid Amount</span>
-          </div>
+          <p className={classes["paid-amount"]}>Paid Amount</p>
 
-          <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
-            <div
-              style={{
-                width: 12,
-                height: 12,
-                backgroundColor: "#E9EBEF",
-                borderRadius: 2,
-                border: "1px solid #ccc",
-              }}
-            ></div>
-            <span style={{ fontSize: 13, color: "#444" }}>Expected Amount</span>
-          </div>
+          <div
+            style={{
+              width: 12,
+              height: 12,
+              backgroundColor: "#E9EBEF",
+              borderRadius: 2,
+              border: "1px solid #ccc",
+            }}
+          ></div>
+          <p className={classes["expected-amount"]}>Expected Amount</p>
         </div>
       </div>
-    </div>
+    </Card>
   );
 };
 

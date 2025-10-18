@@ -1,62 +1,61 @@
 .container {
-    width: 100%;
+  width: 100%;
   h2 {
     font-size: 16px;
-    color: #5b5b5c;
-    // font-weight: bold;
+    color: #636363;
+    font-weight: bold;
     // text-align: start;
   }
   .cards {
     display: flex;
-    // align-items: center;
-    gap: 5rem;
-    padding: 1.5rem 0rem;
+    // flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1rem 0rem;
+    align-items: stretch; //📒📒 to make all dem cards equal height📒📒 
 
     .card {
+      padding: 1rem;
+      width: 13rem;
+      // flex: 0 0 13.3rem; //📒📒 {same as:  width: 13.3rem;,but safer in flex context}📒📒
       display: flex;
-      align-items: flex-start;
       flex-direction: column;
-      // padding: 0.5rem;
-      padding: 0.75rem;
+      justify-content: space-between;
 
-      h2{
+      h2 {
         // color: rgb(123, 122, 122);
-        color: #afb7c3;
+        // color: #afb7c3;
+        color: #636363;
         font-size: 12px;
       }
 
-      .mid-section{
+      .mid-section {
         display: flex;
         align-items: center;
         gap: 3rem;
         justify-content: space-between;
 
-        .sum{
+        .sum {
           font-weight: bold;
           font-size: 18px;
           padding: 0.25rem;
           color: #4d4d4d;
         }
-        
       }
-      .lower-section{
+      .lower-section {
         display: flex;
         align-items: center;
-        p{
-            font-size: 10px;
-            span{
-              color: #c0c6cf;
-            }
+        p {
+          font-size: 10px;
+          span {
+            color: #c0c6cf;
+          }
         }
       }
     }
   }
 }
 
-
-
-
-// its not about the container being in flex. 
+// its not about the container being in flex.
 // .card is this:
 // <div className={classes.cards}>
 //         {FinancialSummaryData.map((data) => (

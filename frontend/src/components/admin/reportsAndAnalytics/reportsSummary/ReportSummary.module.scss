@@ -2,18 +2,29 @@
     width: 100%;
     
   .cards {
+    // display: flex;
+    // align-items: center;
+    // width: 100%;
+    // gap: 5rem;
+    // padding: 1.5rem 0rem;
+
     display: flex;
-    align-items: center;
-    width: 100%;
-    gap: 5rem;
-    padding: 1.5rem 0rem;
+    gap:2rem;
+    padding: 1rem 0rem;
+    align-items: stretch;
 
     .card {
+      // display: flex;
+      // align-items: flex-start;
+      // flex-direction: column;
+      // // padding: 0.5rem;
+      // padding: 0.75rem;
+
+      padding: 1rem;
+      width: 13rem;
       display: flex;
-      align-items: flex-start;
       flex-direction: column;
-      // padding: 0.5rem;
-      padding: 0.75rem;
+      justify-content: space-between;
 
       h2{
         color: rgb(123, 122, 122);

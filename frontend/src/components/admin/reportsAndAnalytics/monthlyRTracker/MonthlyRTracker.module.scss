@@ -3,6 +3,10 @@
   flex-direction: column;
   margin-top: 1rem;
 
+  h4 {
+      color: #636363;
+    }
+
   p {
     color: rgb(123, 122, 122);
     font-size: 12px;
@@ -83,7 +87,8 @@
         margin-top: 2rem;
 
         thead {
-          background-color: rgb(249, 246, 246);
+           background-color: #f9fafb;
+          // background-color: rgb(249, 246, 246);
 
           th {
             text-align: left;
