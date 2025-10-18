@@ -73,6 +73,8 @@
 
 // export default RevenueTrend;
 
+
+import classes from "./RevenueTrend.module.scss";
 import { useMemo } from "react";
 import {
   Chart as ChartJS,
@@ -85,6 +87,7 @@ import {
   type ChartOptions,
 } from "chart.js";
 import { Bar } from "react-chartjs-2";
+import Card from "../../../../ui/card/Card";
 
 ChartJS.register(
   CategoryScale,
@@ -226,11 +229,20 @@ export default function RevenueTrendGroupedBar({ inputData = null }) {
   };
 
   return (
-    <div style={{ background: "white", borderRadius: 10, padding: 18 }}>
-      <h3 style={{ margin: "0 0 12px 0" }}>Revenue Trend</h3>
-      <div style={{ height: 320 }}>
-        <Bar data={data} options={options} />
-      </div>
-    </div>
+    // <div style={{ background: "white", borderRadius: 10, padding: 18 }}>
+    //   <h3 style={{ margin: "0 0 12px 0" }}>Revenue Trend</h3>
+    //   <div style={{ height: 320 }}>
+    //     <Bar data={data} options={options} />
+    //   </div>
+    // </div>
+     <Card className={classes.container}>
+       <div className={classes.heading}>
+         <h2>Revenue Trend</h2>
+         <p>Monthly Collection Over time</p>
+       </div>
+       <div className={classes.chart}>
+         <Bar data={data} options={options} />
+       </div>
+     </Card>
   );
 }

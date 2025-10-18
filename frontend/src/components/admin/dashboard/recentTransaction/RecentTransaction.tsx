@@ -50,7 +50,7 @@ const RecentTransaction = () => {
                 <td></td>
                 <td>{data.vehicleCat}</td>
                 <td></td>
-                <td>
+                <td className={classes.amount}>
                   {nairaSymbol}
                   {data.amount}
                 </td>

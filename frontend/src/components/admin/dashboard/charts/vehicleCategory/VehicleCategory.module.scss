@@ -4,8 +4,12 @@
 //   margin: 1rem 0rem;
   .heading {
     text-align: start;
+    h2{
+      color: #616161;
+    }
     p {
-      color: rgb(123, 122, 122);
+      color: #a3a3a3;
+      // color: rgb(123, 122, 122);
       font-size: 12px;
     }
   }

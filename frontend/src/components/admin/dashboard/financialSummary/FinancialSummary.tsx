@@ -30,7 +30,7 @@ const FinancialSummary = () => {
                 </p>
               </div>
               <div className={classes["lower-section"]}>
-                <p><YesterdayIcon /> {data.yesterday.text}</p>
+                <p><YesterdayIcon /> <span>{data.yesterday.text}</span></p>
               </div>
             </Card>
           );
