@@ -2,8 +2,9 @@ import { FaArrowTrendUp } from "react-icons/fa6";
 import { TbCurrencyNaira } from "react-icons/tb";
 import { BiCalculator } from "react-icons/bi";
 import { LuLeaf } from "react-icons/lu";
-// import { HiOutlineCalculator } from 'react-icons/hi2';
-import { WiMoonAltFull } from "react-icons/wi";
+import { FaCircle } from "react-icons/fa6";
+// import { BsDot } from "react-icons/bs";
+// import { TbDotsVertical } from 'react-icons/tb';
 
 export const ReportAndAnalyticsData = [
   {
@@ -13,6 +14,8 @@ export const ReportAndAnalyticsData = [
     color: "#16a34a",
     lastmonth: {
       icon: FaArrowTrendUp,
+      iconColor: "#16a34a",
+      // iconSize: 16,
       value: "+12%",
       label: "vs last month",
       valueColor: "success",
@@ -24,7 +27,11 @@ export const ReportAndAnalyticsData = [
     icon: BiCalculator,
     color: "#16a34a",
     lastmonth: {
-      icon: WiMoonAltFull,
+      // icon: BsDot,
+      icon: FaCircle,
+      // icon: FaArrowTrendUp,
+      iconColor: "#16a34a",
+      iconSize: 16,
       value: "98.5%",
       label: "fulfilled",
       valueColor: "success",
@@ -37,6 +44,8 @@ export const ReportAndAnalyticsData = [
     color: "#16a34a",
     lastmonth: {
       icon: FaArrowTrendUp,
+      iconColor: "#16a34a",
+      // iconSize: 16,
       value: "+7.5%",
       label: "vs last month",
       valueColor: "success",
@@ -48,9 +57,11 @@ export const ReportAndAnalyticsData = [
     icon: FaArrowTrendUp,
     color: "#16a34a",
     lastmonth: {
-      icon: WiMoonAltFull,
+      icon: FaCircle,
+      iconColor: "#FF0000",
+      iconSize: 16,
       value: "Requires follow-up",
-      label:"",
+      label: "",
       valueColor: "error",
     },
   },

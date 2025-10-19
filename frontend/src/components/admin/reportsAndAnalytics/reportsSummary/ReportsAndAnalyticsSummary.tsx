@@ -8,11 +8,12 @@ const ReportAndAnalyticsSummary = () => {
   return (
     <div className={classes.container}>
       <div className={classes.cards}>
-        
         {ReportAndAnalyticsData.map((data) => {
           const Icon = data.icon;
           const LastMonthIcon = data.lastmonth.icon;
-          const { value, label, valueColor } = data.lastmonth;
+          // const colorIcon =data.lastmonth.iconColor
+          const { value, label,  } = data.lastmonth;
+
           return (
             <Card className={classes["card"]} key={data.heading}>
               <h2>{data.heading}</h2>
@@ -28,14 +29,46 @@ const ReportAndAnalyticsSummary = () => {
               </div>
               <div className={classes["lower-section"]}>
                 <p className={classes.stutusLine}>
-                
-
-                  <span className={`${classes.value} ${classes[valueColor]}`}>
-                      <LastMonthIcon className={classes.statusIcon} />{value}
+                  {/* <span className={`${classes.value} ${classes[valueColor]}`}> */}
+                  <span
+                    className={
+                      data.lastmonth.label === "fulfilled"
+                        ? classes.fulfilled
+                        : data.lastmonth.label === ""
+                        ? classes.error
+                        : `${classes.value} ${
+                            classes[data.lastmonth.valueColor]
+                          }`
+                    }
+                  >
+                    <div
+                      style={{
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "0.2rem",
+                      }}
+                    >
+                      <LastMonthIcon
+                        size={data.lastmonth.iconSize}
+                        color={data.lastmonth.iconColor}
+                        className={classes.statusIcon}
+                      />
+                      {value}
+                      {/* labe(neutral) */}
+                      {label ? (
+                        // <span className={classes.label}>{label}</span>
+                        <span
+                          className={
+                            (data.lastmonth.label === "fulfilled"
+                              ? classes.fulfilled
+                              : classes.label)
+                          }
+                        >
+                          {label}
+                        </span>
+                      ) : null}
+                    </div>
                   </span>
-
-                  {/* labe(neutral) */}
-                  {label? <span className={classes.label}>{label}</span>:null}
                 </p>
               </div>
             </Card>

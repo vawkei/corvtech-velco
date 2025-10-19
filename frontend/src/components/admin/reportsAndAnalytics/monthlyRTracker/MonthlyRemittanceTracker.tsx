@@ -5,6 +5,7 @@ import { FiDownload } from "react-icons/fi";
 import { RiArrowUpDownFill } from "react-icons/ri";
 import { MonthlyRemittanceData } from "./MonthlyRemittanceData";
 
+
 const MonthlyRemittanceTracker = () => {
   var nairaSymbol = "\u20A6";
 
@@ -58,6 +59,9 @@ const MonthlyRemittanceTracker = () => {
             </thead>
             <tbody>
               {MonthlyRemittanceData.map((data, index) => {
+
+                  const ActionIcon = data.action
+
                 return (
                   <tr key={index}>
                     <td>{data.lga}</td>
@@ -92,7 +96,7 @@ const MonthlyRemittanceTracker = () => {
 
                     <td></td>
                     <td className={classes["data-action"]}>
-                      <p>{data.action}</p>
+                      <p><ActionIcon /></p>
                     </td>
                     {/* <td></td> */}
                   </tr>

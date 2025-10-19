@@ -1,3 +1,7 @@
+import { TbDotsVertical } from "react-icons/tb";
+
+TbDotsVertical
+
 export const MonthlyRemittanceData = [
   {
     lga: "SUV/Minibus",
@@ -5,7 +9,7 @@ export const MonthlyRemittanceData = [
     actualAmountPaid: "25,000",
     dueDate: "15-01-2024",
     status: "On Time",
-    action: ":",
+    action: TbDotsVertical,
   },
   {
     lga: "Salon Car",
@@ -13,7 +17,7 @@ export const MonthlyRemittanceData = [
     actualAmountPaid: "30,000",
     dueDate: "16-01-2024",
     status: "On Time",
-    action: ":",
+    action: TbDotsVertical,
   },
   {
     lga: "Motorcycle",
@@ -21,7 +25,7 @@ export const MonthlyRemittanceData = [
     actualAmountPaid: "35,000",
     dueDate: "17-01-2024",
     status: "On Time",
-    action: ":",
+    action: TbDotsVertical,
   },
   {
     lga: "32-seater Bus",
@@ -29,7 +33,7 @@ export const MonthlyRemittanceData = [
     actualAmountPaid: "40,000",
     dueDate: "18-01-2024",
     status: "Overdue",
-    action: ":",
+    action: TbDotsVertical,
   },
   {
     lga: "Truck",
@@ -37,7 +41,7 @@ export const MonthlyRemittanceData = [
     actualAmountPaid: "45,000",
     dueDate: "19-01-2024",
     status: "On Time",
-    action: ":",
+    action: TbDotsVertical,
   },
   {
     lga: "Tricycle",
@@ -45,7 +49,7 @@ export const MonthlyRemittanceData = [
     actualAmountPaid: "50,000",
     dueDate: "20-01-2024",
     status: "Overdue",
-    action: ":",
+    action: TbDotsVertical,
   },
   {
     lga: "Van",
@@ -53,7 +57,7 @@ export const MonthlyRemittanceData = [
     actualAmountPaid: "55,000",
     dueDate: "21-01-2024",
     status: "On Time",
-    action: ":",
+    action: TbDotsVertical,
   },
   {
     lga: "Pickup Truck",
@@ -61,7 +65,7 @@ export const MonthlyRemittanceData = [
     actualAmountPaid: "60,000",
     dueDate: "22-01-2024",
     status: "On Time",
-    action: ":",
+    action: TbDotsVertical,
   },
   {
     lga: "Heavy Duty Truck",
@@ -69,7 +73,7 @@ export const MonthlyRemittanceData = [
     actualAmountPaid: "65,000",
     dueDate: "23-01-2024",
     status: "Overdue",
-    action: ":",
+    action: TbDotsVertical,
   },
   {
     lga: "18-seater Bus",
@@ -77,7 +81,7 @@ export const MonthlyRemittanceData = [
     actualAmountPaid: "70,000",
     dueDate: "24-01-2024",
     status: "Pending",
-    action: ":",
+    action: TbDotsVertical,
   },
   
 ];

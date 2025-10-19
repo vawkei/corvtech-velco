@@ -51,23 +51,31 @@
         }
       }
       .lower-section {
+        // .statusLine {
+        //   display: flex;
+        //   align-items: center;
+        //   gap: 0.5rem;
+        //   font-size: 12px;
+        // }
         .statusLine {
           display: flex;
-          align-items: center;
-          gap: 0.5rem;
-          font-size: 12px;
+          flex-direction: column;
+
         }
         .iconWrapper{
           display: inline-flex;
           align-items: center;
           justify-content: center;
         }
-        .statusIcon{
-          width: 0.9rem;
-          height: 0.9rem;
-        }
+        // .statusIcon{
+        //   width: 0.9rem;
+        //   height: 0.9rem;
+        // }
         .value{
           font-weight: 600;
+        }
+        .fulfilled{
+          color: green;
         }
         .label{
           color: #9ca3af;
