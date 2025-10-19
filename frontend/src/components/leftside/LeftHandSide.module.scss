@@ -51,13 +51,17 @@
     }
 
     li:hover {
-      color: green; /* hover effect */
+      color: yellowgreen; 
       font-weight: 500;
     }
 
     
   }
   .active{
-    color: red;
+    color: white;
+    background-color: green;
+    padding: 1rem;
+    border-radius: 1rem 0rem 0rem 1rem;
   }
+  
 }

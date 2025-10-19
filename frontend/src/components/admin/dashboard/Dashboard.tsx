@@ -12,7 +12,7 @@ const Dashboard = () => {
       {/* <h2>RightHandSide</h2> */}
       
       <div className={classes["dashboard-section"]}>
-        <div>
+        <div className={classes["financial-summary-parent"]}>
           <FinancialSummary />
         </div>
 

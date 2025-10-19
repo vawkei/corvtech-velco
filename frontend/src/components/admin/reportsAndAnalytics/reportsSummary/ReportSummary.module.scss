@@ -1,6 +1,7 @@
 .container {
-    width: 100%;
-    
+  width: 100%;
+  
+
   .cards {
     // display: flex;
     // align-items: center;
@@ -9,7 +10,7 @@
     // padding: 1.5rem 0rem;
 
     display: flex;
-    gap:2rem;
+    gap: 3rem;
     padding: 1rem 0rem;
     align-items: stretch;
 
@@ -26,36 +27,70 @@
       flex-direction: column;
       justify-content: space-between;
 
-      h2{
+      h2 {
         color: rgb(123, 122, 122);
         font-size: 12px;
       }
 
-      .mid-section{
+      .mid-section {
         display: flex;
         align-items: center;
         gap: 3rem;
         justify-content: space-between;
 
-        .icon{
+        .icon {
           padding: 0.2rem;
           background-color: rgb(224, 242, 224);
           border-radius: 6px;
         }
 
-        .sum{
+        .sum {
           font-weight: bold;
           font-size: 18px;
           padding: 0.25rem;
         }
-        
       }
-      .lower-section{
-        display: flex;
-        align-items: center;
-        p{
-            font-size: 10px;
+      .lower-section {
+        .statusLine {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          font-size: 12px;
         }
+        .iconWrapper{
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .statusIcon{
+          width: 0.9rem;
+          height: 0.9rem;
+        }
+        .value{
+          font-weight: 600;
+        }
+        .label{
+          color: #9ca3af;
+          margin-left: 0.25rem;
+          font-weight: 400;
+        }
+
+        // p {
+        //   font-size: 10px;
+        //   display: flex;
+        //   align-items: center;
+        //   gap: 0.25rem;
+
+          .success {
+            color: #16a34a;
+          }
+          .neutral {
+            color: #9ca3af;
+          }
+          .error {
+            color: #dc2626;
+          }
+        
       }
     }
   }

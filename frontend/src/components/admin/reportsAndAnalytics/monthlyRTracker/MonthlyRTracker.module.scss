@@ -7,11 +7,11 @@
       color: #636363;
     }
 
-  p {
-    color: rgb(123, 122, 122);
-    font-size: 12px;
-    margin-top: 0.5rem;
-  }
+  // p {
+  //   color: rgb(123, 122, 122);
+  //   font-size: 8px;
+  //   margin-top: 0.5rem;
+  // }
 
   .card-container {
     padding: 1rem;
@@ -93,7 +93,8 @@
           th {
             text-align: left;
             color: rgb(123, 122, 122);
-            font-size: 12px;
+            // font-size: 12px;
+            font-size: 10.2px;
 
             &.icon-cell {
               width: 70px; // tweak value until visually centered

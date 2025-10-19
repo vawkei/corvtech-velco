@@ -8,9 +8,11 @@ const ReportAndAnalyticsSummary = () => {
   return (
     <div className={classes.container}>
       <div className={classes.cards}>
+        
         {ReportAndAnalyticsData.map((data) => {
           const Icon = data.icon;
           const LastMonthIcon = data.lastmonth.icon;
+          const { value, label, valueColor } = data.lastmonth;
           return (
             <Card className={classes["card"]} key={data.heading}>
               <h2>{data.heading}</h2>
@@ -25,8 +27,15 @@ const ReportAndAnalyticsSummary = () => {
                 </p>
               </div>
               <div className={classes["lower-section"]}>
-                <p>
-                  <LastMonthIcon /> {data.lastmonth.text}
+                <p className={classes.stutusLine}>
+                
+
+                  <span className={`${classes.value} ${classes[valueColor]}`}>
+                      <LastMonthIcon className={classes.statusIcon} />{value}
+                  </span>
+
+                  {/* labe(neutral) */}
+                  {label? <span className={classes.label}>{label}</span>:null}
                 </p>
               </div>
             </Card>
