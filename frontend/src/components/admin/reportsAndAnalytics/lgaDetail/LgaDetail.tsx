@@ -16,7 +16,7 @@ const LgaDetail = () => {
     <div>
       {/* <h2>LGA Detail</h2> */}
       {desiredObject.map((data, index) => {
-        const Icon = data?.totalRevColl?.icon;
+        // const Icon = data?.totalRevColl?.icon;
         return (
           <div key={index} className={classes.container}>
             <div>
