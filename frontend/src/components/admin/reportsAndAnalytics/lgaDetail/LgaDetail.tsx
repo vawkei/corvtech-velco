@@ -1,10 +1,10 @@
 import classes from "./LgaDetail.module.scss";
-import { useParams } from "react-router-dom";
+// import { useParams } from "react-router-dom";
 import { MonthlyRemittanceData } from "../monthlyRTracker/MonthlyRemittanceData";
 import Card from "../../../ui/card/Card";
 
 const LgaDetail = () => {
-  const { id } = useParams();
+//   const { id } = useParams();
   var nairaSymbol = "\u20A6";
 
   // This is actually not cool. I am meant to fetch the data for SUV/Minibus from the data base. And not map through.
