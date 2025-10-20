@@ -1,17 +1,42 @@
+import { FaArrowTrendUp } from "react-icons/fa6";
 import { TbDotsVertical } from "react-icons/tb";
 
-TbDotsVertical
+TbDotsVertical;
 
 export const MonthlyRemittanceData = [
   {
+    id: "1",
     lga: "SUV/Minibus",
     expectedAmount: "25,000",
     actualAmountPaid: "25,000",
     dueDate: "15-01-2024",
     status: "On Time",
     action: TbDotsVertical,
+
+    totalRevColl: {
+      title: "Total Revenue Collected",
+      totalRevColl: "680,000,000",
+      icon: FaArrowTrendUp,
+      value: "+12%",
+      label: "vs last month",
+    },
+    totalRemSent: {
+      title: "Total Remittance Sent",
+      totalRemSent: "612,000,000",
+      icon: FaArrowTrendUp,
+      value: "+7.5%",
+      label: "vs last month",
+    },
+    remittanceRate: {
+      title: "Remittance Rate",
+      remittanceRate: "92%",
+      icon: FaArrowTrendUp,
+      value: "+3.5%",
+      label: "vs last month",
+    },
   },
   {
+    id: "2",
     lga: "Salon Car",
     expectedAmount: "30,000",
     actualAmountPaid: "30,000",
@@ -20,6 +45,7 @@ export const MonthlyRemittanceData = [
     action: TbDotsVertical,
   },
   {
+    id: "3",
     lga: "Motorcycle",
     expectedAmount: "35,000",
     actualAmountPaid: "35,000",
@@ -28,6 +54,7 @@ export const MonthlyRemittanceData = [
     action: TbDotsVertical,
   },
   {
+    id: "4",
     lga: "32-seater Bus",
     expectedAmount: "40,000",
     actualAmountPaid: "40,000",
@@ -36,6 +63,7 @@ export const MonthlyRemittanceData = [
     action: TbDotsVertical,
   },
   {
+    id: "5",
     lga: "Truck",
     expectedAmount: "45,000",
     actualAmountPaid: "45,000",
@@ -44,6 +72,7 @@ export const MonthlyRemittanceData = [
     action: TbDotsVertical,
   },
   {
+    id: "6",
     lga: "Tricycle",
     expectedAmount: "50,000",
     actualAmountPaid: "50,000",
@@ -52,6 +81,7 @@ export const MonthlyRemittanceData = [
     action: TbDotsVertical,
   },
   {
+    id: "7",
     lga: "Van",
     expectedAmount: "55,000",
     actualAmountPaid: "55,000",
@@ -60,6 +90,7 @@ export const MonthlyRemittanceData = [
     action: TbDotsVertical,
   },
   {
+    id: "8",
     lga: "Pickup Truck",
     expectedAmount: "60,000",
     actualAmountPaid: "60,000",
@@ -68,6 +99,7 @@ export const MonthlyRemittanceData = [
     action: TbDotsVertical,
   },
   {
+    id: "9",
     lga: "Heavy Duty Truck",
     expectedAmount: "65,000",
     actualAmountPaid: "65,000",
@@ -76,6 +108,7 @@ export const MonthlyRemittanceData = [
     action: TbDotsVertical,
   },
   {
+    id: "10",
     lga: "18-seater Bus",
     expectedAmount: "70,000",
     actualAmountPaid: "70,000",
@@ -83,5 +116,4 @@ export const MonthlyRemittanceData = [
     status: "Pending",
     action: TbDotsVertical,
   },
-  
 ];
