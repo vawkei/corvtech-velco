@@ -1,7 +1,8 @@
 import { FaArrowTrendUp } from "react-icons/fa6";
 import { TbDotsVertical } from "react-icons/tb";
-
-TbDotsVertical;
+import { TbCurrencyNaira } from "react-icons/tb";
+import { BiCalculator } from "react-icons/bi";
+import { LuLeaf } from "react-icons/lu";
 
 export const MonthlyRemittanceData = [
   {
@@ -15,24 +16,55 @@ export const MonthlyRemittanceData = [
 
     totalRevColl: {
       title: "Total Revenue Collected",
+      iconMain: LuLeaf,
       totalRevColl: "680,000,000",
-      icon: FaArrowTrendUp,
+      iconArrow: FaArrowTrendUp,
       value: "+12%",
       label: "vs last month",
+
+      lastmonth: {
+        icon: FaArrowTrendUp,
+        iconColor: "#16a34a",
+        // iconSize: 16,
+        value: "+12%",
+        label: "vs last month",
+        valueColor: "success",
+      },
     },
+
     totalRemSent: {
       title: "Total Remittance Sent",
+      iconMain: BiCalculator,
       totalRemSent: "612,000,000",
-      icon: FaArrowTrendUp,
+      iconArrow: FaArrowTrendUp,
       value: "+7.5%",
       label: "vs last month",
+
+      lastmonth: {
+        icon: FaArrowTrendUp,
+        iconColor: "#16a34a",
+        // iconSize: 16,
+        value: "+7.5%",
+        label: "vs last month",
+        valueColor: "success",
+      },
     },
     remittanceRate: {
       title: "Remittance Rate",
+      iconMain: TbCurrencyNaira,
       remittanceRate: "92%",
-      icon: FaArrowTrendUp,
+      iconArrow: FaArrowTrendUp,
       value: "+3.5%",
       label: "vs last month",
+
+      lastmonth: {
+        icon: FaArrowTrendUp,
+        iconColor: "#16a34a",
+        // iconSize: 16,
+        value: "+3.5%",
+        label: "vs last month",
+        valueColor: "success",
+      },
     },
   },
   {

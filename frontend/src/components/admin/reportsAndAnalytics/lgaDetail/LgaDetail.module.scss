@@ -16,12 +16,12 @@
   .cards {
     display: flex;
     align-items: stretch;
-    gap: 3rem;
+    gap: 5rem;
     padding: 1rem 0rem;
 
     .card {
       padding: 1rem;
-      width: 13rem;
+      width: 18rem;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -32,11 +32,40 @@
       }
 
       .mid-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         .sum {
           font-weight: bold;
           font-size: 18px;
           padding: 0.25rem;
           color: #4d4d4d;
+        }
+        .icon-main {
+          padding: 0.2rem;
+          background-color: rgb(224, 242, 224);
+          border-radius: 6px;
+        }
+      }
+
+      .lower-section {
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+
+        .value {
+          font-size: 14px;
+          font-weight: bold;
+          // font-weight: 600;
+          color: green;
+        }
+        .label {
+          color: #9ca3af;
+          margin-left: 0.25rem;
+          font-size: 12px;
+          font-weight: bold;
+          // font-weight: 400;
+
         }
       }
     }
