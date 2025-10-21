@@ -1,73 +1,17 @@
-.container {
+.container{
   width: 100%;
-  margin-top: 1rem;
 
-  h2 {
-    font-size: 16px;
-    color: #636363;
-    font-weight: bold;
-    // text-align: start;
-  }
-  p {
-    color: #c0c6cf;
-    font-size: 10px;
-  }
-
-  .cards {
+  .charts{
     display: flex;
     align-items: stretch;
-    gap: 5rem;
-    padding: 1rem 0rem;
+    gap: 3rem;
 
-    .card {
-      padding: 1rem;
-      width: 18rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-
-      .heading {
-        color: #636363;
-        font-size: 12px;
-      }
-
-      .mid-section {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        .sum {
-          font-weight: bold;
-          font-size: 18px;
-          padding: 0.25rem;
-          color: #4d4d4d;
-        }
-        .icon-main {
-          padding: 0.2rem;
-          background-color: rgb(224, 242, 224);
-          border-radius: 6px;
-        }
-      }
-
-      .lower-section {
-        display: flex;
-        align-items: center;
-        gap: 0.3rem;
-
-        .value {
-          font-size: 14px;
-          font-weight: bold;
-          // font-weight: 600;
-          color: green;
-        }
-        .label {
-          color: #9ca3af;
-          margin-left: 0.25rem;
-          font-size: 12px;
-          font-weight: bold;
-          // font-weight: 400;
-
-        }
-      }
+    .rev-col-container{
+        width: 48%;
+    }
+    .payment-meth-container{
+        width: 48%;
     }
   }
 }
+
